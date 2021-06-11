@@ -1,11 +1,47 @@
 <html>
+
 <head>
-    pg.1
+    <title>
+        pg.1
+    </title>
+    <style>
+        img{
+            float: left;
+            margin-top: 2em;
+        }
+        .cls{
+            /* float:right; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2ch;
+            font-weight: bold;
+        }
+        div{
+            position: fixed;
+            top:1rem;
+        }
+        div>*{
+            border:1px black solid;
+            margin: 5px;
+            padding:15px;
+            background-color: lightgreen;
+            border-radius: 5px;
+        }
+        div>*:hover{
+            background-color: rgb(255, 121, 121);
+        }
+    </style>
 </head>
 
-<body>Ones u'pon a time,there was an <i>egg with green stripes</i> on it.<p><img src="./img/book1_pg1.png">
-    <p><a href="http://127.0.0.1:5500/index.html">index(back)</a>
-        <a href="http://127.0.0.1:5500/pg2.html">pg.2(next)<pg>
-            </pg>(next)</a></body>
+<body>
+    <img src="./img/book1_pg1.png" />
+    <div>
+        <a href="./index.html">index(back)</a>
+        <a href="./pg2.html">pg.2(next)</a>
+    </div>
+    <p class="cls">
+        Ones u'pon a time,there was an <i>egg with green stripes</i> on it.
+    </p>
+
+</body>
 
 </html>
