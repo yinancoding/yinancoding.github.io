@@ -5,9 +5,8 @@
         pg.1
     </title>
     <style>
-        img{
-            float: left;
-            margin-top: 2em;
+        .container{
+            width:60%;
         }
         .cls{
             /* float:right; */
@@ -15,33 +14,36 @@
             font-size: 2ch;
             font-weight: bold;
         }
-        div{
-            position: fixed;
-            top:1rem;
+        .nav{
+            float:right;
+            margin-top: 1rem;
         }
-        div>*{
+        .nav>*{
             border:1px black solid;
             margin: 5px;
             padding:15px;
             background-color: lightgreen;
             border-radius: 5px;
         }
-        div>*:hover{
+        .nav>*:hover{
             background-color: rgb(255, 121, 121);
         }
     </style>
 </head>
 
 <body>
-    <img src="./img/book1_pg1.png" />
-    <div>
-        <a href="./index.html">index(back)</a>
-        <a href="./pg2.html">pg.2(next)</a>
-    </div>
-    <p class="cls">
-        Ones u'pon a time,there was an <i>egg with green stripes</i> on it.
-    </p>
-
+    <div class="container">
+        <div class="nav">
+            <a href="./index.html">index(back)</a>
+            <a href="./pg2.html">Next>></a>
+        </div>
+        <div>
+            <img src="./img/book1_pg1.png" />
+            <p class="cls">
+                Ones u'pon a time,there was an <i>egg with green stripes</i> on it.
+            </p>
+        </div>
+    </div> 
 </body>
 
 </html>
