@@ -5,45 +5,43 @@
         pg.1
     </title>
     <style>
-        .container{
-            width:60%;
+        img{
+            float: left;
+            margin-top: 2em;
         }
         .cls{
             /* float:right; */
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 2ch;
-            font-weight: bold;
+            float: right;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bolder;
         }
-        .nav{
-            float:right;
-            margin-top: 1rem;
+        div{
+            position: fixed;
+            top:1rem;
         }
-        .nav>*{
-            border:1px black solid;
+        div>*{
+            border:5px rgb(0, 0, 0) solid;
             margin: 5px;
             padding:15px;
-            background-color: lightgreen;
+            background-color: rgb(0, 255, 0);
             border-radius: 5px;
         }
-        .nav>*:hover{
-            background-color: rgb(255, 121, 121);
+        div>*:hover{
+            background-color: rgb(0, 0, 255);
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="nav">
-            <a href="./index.html">index(back)</a>
-            <a href="./pg2.html">Next>></a>
-        </div>
-        <div>
-            <img src="./img/book1_pg1.png" />
-            <p class="cls">
-                Ones u'pon a time,there was an <i>egg with green stripes</i> on it.
-            </p>
-        </div>
-    </div> 
+    <img src="./img/book1_pg1.png" />
+    <div>
+        <a href="./index.html">index(back)</a>
+        <a href="./pg2.html">pg.2(next)</a>
+    </div>
+    <p class="cls">
+        Ones u'pon a time,there was an <i>egg with green stripes</i> on it.
+    </p>
+
 </body>
 
 </html>
