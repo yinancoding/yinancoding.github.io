@@ -2,12 +2,24 @@
 <html>
     <head>
         <title>clicker</title>
-    </head> 
+    </head>         
+    <script type="module" >
+        var numinput = document.querySelector('#num');
+        var numval=numinput.value;
+            function click()  {
+                numval+=1;
+                numinput.value=numval;
+            }
+
+        </script>
     <body>
+
         <div class="clicks" id="theamount">
 
         </div>
-            
-        <button class="click" type="button" onclick="console.log('hello world');">click</button>
+        <input type="text" name="" id="num" value='0'/>   
+        <button type="button" onclick="click()">click</button>
+
+        'clicks:'+clicks
     </body>
 </html>
