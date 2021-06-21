@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>clicker</title>
-    </head> 
-    <body>
-        <div class="clicks" id="theamount">
 
-        </div>
-            
-        <button class="click" type="button" onclick="console.log('hello world');">click</button>
-    </body>
+<head>
+    <title>clicker</title>
+</head>
+<script type="module">
+    var myClick = document.querySelector('#myClick');
+    myClick.addEventListener('click', () => {
+        var numinput = document.querySelector('#num');
+        var numval = numinput.value;
+        numval += 1;
+        numinput.value = numval;
+    });
+</script>
+
+<body>
+
+    <div class="clicks" id="theamount">
+
+    </div>
+    <input type="text" name="" id="num" value='0' />
+    <button type="button" id="myClick">click</button>
+
+    'clicks:'+clicks
+</body>
+
 </html>
