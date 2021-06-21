@@ -8,7 +8,7 @@
     var myClick = document.querySelector('#myClick');
     myClick.addEventListener('click', () => {
         var numinput = document.querySelector('#num');
-        var numval = numinput.value;
+        var numval = Number(numinput.value);
         numval += 1;
         numinput.value = numval;
     });
